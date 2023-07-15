@@ -17,8 +17,11 @@ const embedder = new OpenAIEmbeddingFunction({ openai_api_key: process.env.OPENA
 
 let collectionA, collectionB;
 
+//Comment in/out sections as necessary
 async function initiateCollection() {
   try {
+
+
     // await client.deleteCollection({
     //   name: "memory-a"
     //  });
@@ -44,6 +47,7 @@ async function initiateCollection() {
     // });
 
     
+
     collectionA = await client.getCollection({
       name: "memory-a",
       embeddingFunction: embedder,
@@ -53,12 +57,14 @@ async function initiateCollection() {
       name: "memory-b",
       embeddingFunction: embedder,
     });
+
+
   } catch (error) {
     console.log(`Error in initiateCollection: ${error}`);
   }
 }
 
-
+//This is really ugly, sorry
 async function addMemory(associativeMemory, otherMessage, collectionName, identity1, identity2) {
   try {
     let memoryPrompt = "";
