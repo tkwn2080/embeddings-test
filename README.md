@@ -4,6 +4,7 @@
 
  Their memory of the conversation is embedded via ChromaDB, with a pool each.
  Each incoming message triggers a query, which is then converted to a form amenable to prompt injection.
- This basic structure is sound.
+ This basic structure is solid.
 
- Testing functions include embedThoughts and the recursive query function.
+ Test functions include embedThoughts and the recursive query function.
+ The value of these is as yet unclear.
