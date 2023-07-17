@@ -11,3 +11,7 @@ The value of these is as yet unclear, contingent.
 
 You will need to point this at a Chroma client, here hosted via Docker.
 An OpenAI API key in environmental variables is also necessary.
+
+
+Currently working on further features: custom chunking algorithm, hook and hanger queries with a clipping filter, etc.
+I have also put together a prototype for 'dreaming' as a way to intermittently consolidate memories.
